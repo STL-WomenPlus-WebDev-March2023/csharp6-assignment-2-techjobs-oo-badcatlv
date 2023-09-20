@@ -1,10 +1,9 @@
-﻿using System;
-namespace TechJobsOOAutoGraded6
+﻿namespace TechJobsOOAutoGraded6
 {
-	public class Employer
-	{
+    public class Employer
+    {
         public int Id { get; }
-        private static int nextId = 1;
+        private static int nextId = 1; //static therefore the changing value is NOT store in any Employer object
         public string Value { get; set; }
 
         public Employer()
@@ -13,7 +12,10 @@ namespace TechJobsOOAutoGraded6
             nextId++;
         }
 
-        public Employer(string value) : this()
+        public Employer(string value) : this()  //CONSTRUCTOR CHAINING 
+                                                //assigns the value field. It ALSO initializes id for the object
+                                                //by calling the first constructor statement with the :this()
+                                                //Including :this() in any Employer constructor makes initializing id a default behavior.
         {
             Value = value;
         }
