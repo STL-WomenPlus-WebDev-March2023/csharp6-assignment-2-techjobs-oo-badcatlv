@@ -38,9 +38,11 @@
         // TODO: Task 5: Generate custom ToString() method.
         //Until you create this method, you will not be able to print a job to the console.
         public override string ToString()
-        {            
+        {
+            if (Name == null) { Name = "Data not available"; }
+
             //string NoData = "Data not available";
-            return $"\nID: {Id}\nName: {Name}\nEmployer: {EmployerName}\nLocation: {EmployerLocation}\nPosition Type: {JobType}\nCore Competency: {JobCoreCompetency}\n";
+            return $"{Environment.NewLine}ID: {Id}\nName: {Name}\nEmployer: {EmployerName}\nLocation: {EmployerLocation}\nPosition Type: {JobType}\nCore Competency: {JobCoreCompetency}{Environment.NewLine}";
         }
 
 

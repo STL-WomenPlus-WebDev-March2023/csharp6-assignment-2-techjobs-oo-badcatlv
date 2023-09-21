@@ -1,4 +1,5 @@
-﻿using TechJobs.Tests;
+﻿
+using TechJobs.Tests;
 
 namespace TechJobsOO.Tests
 {

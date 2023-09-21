@@ -51,8 +51,8 @@ namespace TechJobs.Tests
         [TestMethod]
         public void TestToStringStartsAndEndsWithNewLine()
         {
-            Assert.IsTrue(job_1.ToString().StartsWith("\n"));
-            Assert.IsTrue(job_1.ToString().EndsWith("\n"));
+            Assert.IsTrue(job_3.ToString().StartsWith(Environment.NewLine));
+            Assert.IsTrue(job_3.ToString().EndsWith(Environment.NewLine));
         }
 
         [TestMethod]
@@ -64,7 +64,7 @@ namespace TechJobs.Tests
             Assert.IsTrue(job_3.ToString().Contains($"Location: {job_3.EmployerLocation}"));
             Assert.IsTrue(job_3.ToString().Contains($"Position Type: {job_3.JobType}"));
             Assert.IsTrue(job_3.ToString().Contains($"Core Competency: {job_3.JobCoreCompetency}"));
-            Assert.AreEqual(job_3.ToString(), $"\nID: {job_3.Id}\nName: {job_3.Name}\nEmployer: {job_3.EmployerName}\nLocation: {job_3.EmployerLocation}\nPosition Type: {job_3.JobType}\nCore Competency: {job_3.JobCoreCompetency}\n");
+            Assert.AreEqual(job_3.ToString(), $"{Environment.NewLine}ID: {job_3.Id}\nName: {job_3.Name}\nEmployer: {job_3.EmployerName}\nLocation: {job_3.EmployerLocation}\nPosition Type: {job_3.JobType}\nCore Competency: {job_3.JobCoreCompetency}{Environment.NewLine}");
 
 
         }
@@ -72,7 +72,7 @@ namespace TechJobs.Tests
         [TestMethod]
         public void TestToStringHandlesEmptyField()
         {
-            Assert.AreEqual(job_1.ToString(), $"\nID: {job_1.Id}\nName: {job_1.Name}\nEmployer: {job_1.EmployerName}\nLocation: {job_1.EmployerLocation}\nPosition Type: {job_1.JobType}\nCore Competency: {job_1.JobCoreCompetency}\n");
+            Assert.AreEqual(job_1.ToString(), $"{Environment.NewLine}ID: {job_1.Id}\nName: {job_1.Name}\nEmployer: {job_1.EmployerName}\nLocation: {job_1.EmployerLocation}\nPosition Type: {job_1.JobType}\nCore Competency: {job_1.JobCoreCompetency}{Environment.NewLine}");
             
         }
     }
