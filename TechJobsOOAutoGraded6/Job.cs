@@ -1,15 +1,14 @@
-﻿using System;
-namespace TechJobsOOAutoGraded6
+﻿namespace TechJobsOOAutoGraded6
 {
-	public class Job
-	{
-            public int Id { get; }
-            private static int nextId = 1;
-            public string Name { get; set; }
-            public Employer EmployerName { get; set; }
-            public Location EmployerLocation { get; set; }
-            public PositionType JobType { get; set; }
-            public CoreCompetency JobCoreCompetency { get; set; }
+    public class Job
+    {
+        public int Id { get; }
+        private static int nextId = 1;
+        public string Name { get; set; } = "Data not available";
+        public Employer EmployerName { get; set; } = new Employer("Data not available");
+        public Location EmployerLocation { get; set; } = new Location("Data not available");
+        public PositionType JobType { get; set; } = new PositionType("Data not available");
+        public CoreCompetency JobCoreCompetency { get; set; } = new CoreCompetency("Data not available");
 
         public Job()
         {
@@ -17,7 +16,7 @@ namespace TechJobsOOAutoGraded6
             nextId++;
         }
 
-        public Job (string name, Employer employerName, Location employerLocation, PositionType jobType, CoreCompetency jobCoreCompetency) : this ()
+        public Job(string name, Employer employerName, Location employerLocation, PositionType jobType, CoreCompetency jobCoreCompetency) : this()
         {
             Name = name;
             EmployerName = employerName;
@@ -39,8 +38,9 @@ namespace TechJobsOOAutoGraded6
         // TODO: Task 5: Generate custom ToString() method.
         //Until you create this method, you will not be able to print a job to the console.
         public override string ToString()
-        {
-            return $"\n\n";
+        {            
+            //string NoData = "Data not available";
+            return $"\nID: {Id}\nName: {Name}\nEmployer: {EmployerName}\nLocation: {EmployerLocation}\nPosition Type: {JobType}\nCore Competency: {JobCoreCompetency}\n";
         }
 
 
