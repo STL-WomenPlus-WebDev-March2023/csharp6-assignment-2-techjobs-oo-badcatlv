@@ -20,7 +20,7 @@ namespace TechJobs.Tests
         //initialize your testing objects here
 
         [TestMethod]
-        public void TestSettingJobID()
+        public void TestSettingJobId()
         {
             Assert.IsTrue(job_1.Id < job_2.Id);
             Assert.IsTrue(job_2.Id - job_1.Id == 1);
