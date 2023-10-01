@@ -136,8 +136,8 @@ namespace TechJobsOO.Tests
             Assert.AreEqual(lviCount, 2, "Equals method has 2 local variables");
 
             //verify output
-            Assert.AreEqual(testPosition, testPosition, "Objects with Same ID are not Equal");
-            Assert.AreNotEqual(testPosition, testPosition2, "Objects with different ID Equal?");
+            Assert.AreEqual(testPosition, testPosition, "Objects with Same Id are not Equal");
+            Assert.AreNotEqual(testPosition, testPosition2, "Objects with different Id Equal?");
         }
 
 

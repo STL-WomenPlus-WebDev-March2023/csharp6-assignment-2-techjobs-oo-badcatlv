@@ -42,7 +42,7 @@
             if (Name == null) { Name = "Data not available"; }
 
             //string NoData = "Data not available";
-            return $"{Environment.NewLine}ID: {Id}\nName: {Name}\nEmployer: {EmployerName}\nLocation: {EmployerLocation}\nPosition Type: {JobType}\nCore Competency: {JobCoreCompetency}{Environment.NewLine}";
+            return $"{Environment.NewLine}Id: {Id}\nName: {Name}\nEmployer: {EmployerName}\nLocation: {EmployerLocation}\nPosition Type: {JobType}\nCore Competency: {JobCoreCompetency}{Environment.NewLine}";
         }
 
 

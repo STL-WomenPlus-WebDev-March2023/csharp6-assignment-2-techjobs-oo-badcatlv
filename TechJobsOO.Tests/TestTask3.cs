@@ -108,8 +108,8 @@ namespace TechJobsOO.Tests
             Assert.AreEqual(lviCount, 2, "Equals method doesn't have correct number of local variables");
 
             //verify output
-            Assert.AreEqual(testJob1, testJob1, "Objects with same ID are equal");
-            Assert.AreNotEqual(testJob1, testJob2, "Objects with different ID are not equal");
+            Assert.AreEqual(testJob1, testJob1, "Objects with same Id are equal");
+            Assert.AreNotEqual(testJob1, testJob2, "Objects with different Id are not equal");
         }
 
 
