@@ -3,7 +3,6 @@ namespace TechJobsOOAutoGraded6
 {
 	public class PositionType : JobField
 	{
-        public PositionType() { }
         public PositionType(string value) : base(value) { }
         //public int Id { get; }
         //private static int nextId = 1;

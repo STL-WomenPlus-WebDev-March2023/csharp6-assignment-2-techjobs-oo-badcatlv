@@ -3,7 +3,6 @@ namespace TechJobsOOAutoGraded6
 {
 	public class CoreCompetency : JobField
 	{
-        public CoreCompetency() { }
         public CoreCompetency(string value) : base(value) { }
 
         //public int Id { get; set; }

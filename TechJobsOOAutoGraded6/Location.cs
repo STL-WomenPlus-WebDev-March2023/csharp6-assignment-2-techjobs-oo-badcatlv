@@ -3,7 +3,6 @@ namespace TechJobsOOAutoGraded6
 {
 	public class Location : JobField
 	{
-        public Location() { }
         public Location(string value) : base(value) { }
 
         //public int Id { get; }
