@@ -14,7 +14,14 @@
 
         public JobField(string value) : this()
         {
-            Value = value;
+            if (value.Trim() == "")
+            {
+                Value = "No Data Available";
+            }
+            else
+            {
+                Value = value;
+            }
         }
 
         public override bool Equals(object? obj)
