@@ -1,38 +1,42 @@
-﻿using System;
-namespace TechJobsOOAutoGraded6
+﻿namespace TechJobsOOAutoGraded6
 {
-	public class Employer
-	{
-        public int Id { get; }
-        private static int nextId = 1;
-        public string Value { get; set; }
+    public class Employer : JobField
+    {
+        public Employer(string value) : base(value) { }
 
-        public Employer()
-        {
-            Id = nextId;
-            nextId++;
-        }
+        //public int Id { get; }
+        //private static int nextId = 1; //static therefore the changing value is NOT stored in any Employer object
+        //public string Value { get; set; }
 
-        public Employer(string value) : this()
-        {
-            Value = value;
-        }
+        //public Employer()
+        //{
+        //    Id = nextId;
+        //    nextId++;
+        //}
 
-        public override bool Equals(object obj)
-        {
-            return obj is Employer employer &&
-                   Id == employer.Id;
-        }
+        //public Employer(string value) : this()  //CONSTRUCTOR CHAINING 
+        //                                        //assigns the value field. It ALSO initializes id for the object
+        //                                        //by calling the first constructor statement with the :this()
+        //                                        //Including :this() in any Employer constructor makes initializing id a default behavior.
+        //{
+        //    Value = value;
+        //}
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Id);
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    return obj is Employer employer &&
+        //           Id == employer.Id;
+        //}
 
-        public override string ToString()
-        {
-            return Value;
-        }
+        //public override int GetHashCode()
+        //{
+        //    return HashCode.Combine(Id);
+        //}
+
+        //public override string ToString()
+        //{
+        //    return Value;
+        //}
     }
 }
 

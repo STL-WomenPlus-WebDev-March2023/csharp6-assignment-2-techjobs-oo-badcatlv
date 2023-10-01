@@ -8,7 +8,6 @@ namespace TechJobsOO.Tests
 
         // Testing Location --------------------------------------------------------
 
-        /* TODO: Task 2: Remove this line to uncomment the tests
 
         [TestMethod] //1
         public void Test_Second_Location_Constructor_Exists()
@@ -137,8 +136,8 @@ namespace TechJobsOO.Tests
             Assert.AreEqual(lviCount, 2, "Equals method has 2 local variables");
 
             //verify output
-            Assert.AreEqual(testPosition, testPosition, "Objects with Same ID are not Equal");
-            Assert.AreNotEqual(testPosition, testPosition2, "Objects with different ID Equal?");
+            Assert.AreEqual(testPosition, testPosition, "Objects with Same Id are not Equal");
+            Assert.AreNotEqual(testPosition, testPosition2, "Objects with different Id Equal?");
         }
 
 
@@ -177,8 +176,6 @@ namespace TechJobsOO.Tests
             //verify output
             Assert.AreEqual(testPosition.Value.ToString(), "Quality Control", "ToString does not return same output as set value");
         }
-
-        TODO: Task 2: Remove this line to uncomment the tests */
 
     }
 }

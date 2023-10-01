@@ -5,8 +5,6 @@ namespace TechJobsOO.Tests
 	public class TestTask3
 	{
         //Testing the new Job class.  Tests are numbered.
-
-        /* TODO: Task 3: Remove this line to uncomment the tests
           
      
         [TestMethod]    //1
@@ -110,8 +108,8 @@ namespace TechJobsOO.Tests
             Assert.AreEqual(lviCount, 2, "Equals method doesn't have correct number of local variables");
 
             //verify output
-            Assert.AreEqual(testJob1, testJob1, "Objects with same ID are equal");
-            Assert.AreNotEqual(testJob1, testJob2, "Objects with different ID are not equal");
+            Assert.AreEqual(testJob1, testJob1, "Objects with same Id are equal");
+            Assert.AreNotEqual(testJob1, testJob2, "Objects with different Id are not equal");
         }
 
 
@@ -131,8 +129,6 @@ namespace TechJobsOO.Tests
             //verify output
             Assert.AreNotEqual(testJob1.GetHashCode(), testJob2.GetHashCode(), "GetHashCode output test");
         }
-
-        TODO: Task 3: Remove this line to uncomment the tests */
     }
 }
 
